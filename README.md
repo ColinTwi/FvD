@@ -171,6 +171,36 @@ Rood
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  Ging goed
+
+  De eerste animatie die ik had gemaakt ging goed en daarom heb ik een tweede animatie gemaakt. In deze tweede animatie heb ik de custum bezier website gebruikt om de animatie een soort bounce effect te geven.
+  <img src="readme-images/code-animatie1.png">
+  <img src="readme-images/animatie2.png">
+
+  Ging slecht
+
+  Ik kwam er steeds niet achter waarom ik niet met de keyboard door de website content kon tabben, maar uiteindelijk kwam ik er achter dat ik niet alle afbeeldingen een link had toegegeven.
+  <img src="readme-images/moeite-met-keyboard-nav.png">
+
+  Ook had ik moeite met een hele specifieke section te selecteren zonder een andere section ook toe te voegen. Uiteindelijk heb ik een has selector gebruikt die gelukkig wel werkt.
+  <img src="readme-images/moeite-has-selector.png">
+  
+
+
+
+
+  Vragen die ik heb
+
+  -Ik heb elk label en text op mijn website in het engels staan net zoals de echte website. Alleen heb ik de alt attributen in het nederlands staan. Moet ik dan een lang="nl" of lang="en"
+
+  -Voor de focus states moet ik elk element opnieuw stijlen met een specifieke bijpassende border of stijl?
+
+  -Mijn uitschuifbalk is niet selecteer baar in voice over modus. Hoe fix ik dit?
+
+  -De uitschuifbalk krijg ik niet mooi gepositioneerd bij grote schermen. Moet ik hiervoor dan mediaquerys gebruiken?
+
+  -Links zien er raar uit als ze worden ingedrukt.
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
