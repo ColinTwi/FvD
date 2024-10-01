@@ -20,11 +20,10 @@
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
 	--color-text:#111;
 	--color-text-licht: #ffffff;
 	--color-background:#ffffff;
-	--margin-content: 1em 0 2em 0;
+	--margin-content: .3em 0 2em 0;
 	--bold-tekst: 600;
 	--input-background: rgb(230, 232, 234);
 	--dark-background: black;
@@ -38,11 +37,8 @@
 
 
 /****************/
-/* JOUW STYLING */
+/* Home page */
 /****************/
-
-/* jouw code */
-
 body{
 	margin: 0;
 	padding: 0;
@@ -52,30 +48,27 @@ body{
 	position: relative;
 }
 
-/* navigatie */
-header nav img{
-	width: 2em;
-	height: auto;
-	margin-right: 2em;
-}
 
+/* navigatie container */
 header{
 	display: flex;
 	box-shadow: var(--shadow);
-	margin: 0 0 1.5em 0;
 	align-items: center;
 	position: fixed;
+	z-index: 1100;
 	top: 0;
-	left: 0;
 	width: 100%;
-	height: 4.5em;
-	z-index: 1000;
 	background-color: var(--color-background);
-	padding: 1em 0.8em 1em 0.8em;
+	padding: 1.5em 0.8em 1.5em 0.8em;
 	justify-content: space-evenly;
 }
 
-/* Begin navigatie */
+
+/* Eerste 3 elementen in de nav*/
+header nav:first-of-type img{
+	width: 2em;
+}
+
 header nav:first-of-type{
 	display: flex;
 	align-items: center;
@@ -85,39 +78,16 @@ header nav:first-of-type a:nth-of-type(2){
 	color: var(--color-text);
 	font-weight: var(--bold-tekst);
 	text-decoration: none;
+	margin-left: 2.5em;
 }
 
 nav:first-of-type a:nth-of-type(3){
 	color: var(--color-text);
 	font-weight: var(--bold-tekst);
 	text-decoration: none;
-	margin-left: 3em;
+	margin-left: 2.5em;
 }
 
-
-
-
-/* Eind navigatie */
-header nav:nth-of-type(2){
-	display: flex;
-	align-items: center;
-	justify-content: end;
-}
-
-nav:nth-of-type(2) img{
-	width: 1.5em;
-	margin: 0 0 0 1em;
-}
-
-nav:nth-of-type(2) a:last-of-type img{
-	width: 1em;
-	margin-left: .4em;
-}
-
-img[alt="Profielfoto van een cartoon poppetje in een gele hoodie"]{
-	border-radius: 5em;
-	border: 1.4px solid var(--color-text);
-}
 
 /* home en create knoppen responsiveness */
 @media(max-width: 850px){
@@ -131,147 +101,146 @@ img[alt="Profielfoto van een cartoon poppetje in een gele hoodie"]{
 		background-color: var(--dark-background);
 		padding: 0.8em 1em 0.8em 1em;
 		border-radius: 2em;
-		color: var(--color-text-licht);   
+		color: var(--color-text-licht); 
+		box-shadow: var(--shadow);  
 	}	
 }
 
 
 /* Zoekbalk */
-
-form a img{
-	width: 1.4em;
-	height: auto;
-	margin-left: 0.4em;
-}
-
-form a input{
-	border: none;
-	outline: none;
-	background-color: transparent;
-	width: 100%;
-	font-size: 1em;
-}
-
-form a input::placeholder {
-	color: var(--color-text);
-}
-
-/*Zoekbalk responsiveness*/
-@media (max-width: 600px){
-	form a input{
-		display: none;
-	}
-
-	form a{
-        padding: 0.3em;
-        margin: 0; 
-		width: fit-content;
-		display: flex;
-    }
-
-	form a img{
-        margin-right: 0; 
-    }
-
-	header nav:nth-of-type(1) a:nth-of-type(2){
-		margin-right: 1em;
-	}
-}
-
-@media(min-width: 600px){
-	form a{
-	padding: 0.3em 7em 0.3em 0.4em;
-	background-color: var(--input-background);
-	border-radius: 1.8em;
-	justify-content: start;
+form label{
 	display: flex;
 	align-items: center;
-	text-decoration: none;
-	margin: 0 1.5em 0 1.5em;
-	border: 1.5px solid var(--color-text);
+}
+
+form label img{
+	width: 1.4em;
+	margin-left: 0.5em;
+}
+
+form label input{
+	border: none;
+	background: none;
+	font-size: 1em;
+	width: .2em;
+}
+
+form label input::placeholder {
+	color: var(--color-text);
+	font-weight: var(--bold-tekst);
+}
+
+
+/*Zoekbalk responsiveness*/
+@media (max-width: 670px){
+	form label{
+		padding: .4em;
+		border-radius: 30%;
+		background-color: var(--input-background);
+		border: 2px solid var(--color-text);
+		margin-left: 1em;
 	}
 
-	form a img{
+	form label img{
+		margin-left: 0;
+	}
+}
+
+@media(min-width: 670px){
+	form label{
+	padding: 0.3em 6em 0.3em 0.4em;
+	background-color: var(--input-background);
+	border-radius: 2em;
+	margin: 0 1.5em 0 1.5em;
+	border: 2px solid var(--color-text);
+	box-shadow: var(--shadow);
+	}
+
+	form label img{
 		margin: .3em .7em .3em .7em;
 	}
 
-	header nav:nth-of-type(2) a:first-of-type img:first-of-type{
-		margin-left: 3em;
+	form label input{
+		width: 100%;
 	}
 }
 
-/* Zoekbalk uitgeklapt */
 
-main > nav{
+/* Zoekbalk uitgeklapt */
+body > section:first-of-type{
 	background-color: var(--color-background);
-	margin: 4em 3em 0 3em;
-	padding: .8em;
+	margin: 4em 0 0 0;
+	padding: 4% 4% 4% 4%;
 	box-shadow: var(--shadow);
-	border-radius: .5em;
+	border-radius: 1em;
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
 	position: fixed;
-	z-index: 600;
-	top: 0%;
-	left: -1%;
-	right: -1%;
+	z-index: 1000;
 	display: none;
-	width: 80%;
+	top: 0%;
+	left: 10%;
+	right: 10%;	
 }
 
-@keyframes schuiven{
-	0%{translate: 0em -19em;}
-	100%{translate: 0em 0em;}
+@keyframes uitschuiven{
+	0%{translate: 0em -24em;
+	display: none;}
+	100%{translate: 0em 0em;
+		display: block;}
 }
 
 @keyframes terugschuiven{
-	0%{translate: 0em 0em;}
-	100%{translate: 0em -19em;}
+	0%{translate: 0em 0em;
+		display: block;}
+	100%{translate: 0em -38em;
+		display: none;}
 }
 
 /* bron: https://tools.webdevpuneet.com/css-easing-generator/ */
-main > nav.klap{
-	display: block;
-	animation: schuiven 1.5s forwards;
+body > section:first-of-type.uitklappen{
+	animation: uitschuiven 1.5s forwards;
 	transition: all 400ms cubic-bezier(0.845, -0.045, 0.315, 1.565);
 	transition-timing-function: cubic-bezier(0.845, -0.045, 0.315, 1.565);
+	display: block;
 }
 
-main > nav.terug{
-	display: block;
+body > section:first-of-type.inklappen{
 	animation: terugschuiven 1.5s forwards;	
 	transition: all 400ms cubic-bezier(0.845, -0.045, 0.315, 1.565);
 	transition-timing-function: cubic-bezier(0.845, -0.045, 0.315, 1.565);
+	display: block;
 }
 
-main > nav h2{
-	font-size: 1.2rem;
-	width: fit-content;
+body > section:first-of-type h2{
+	font-size: 1.2em;
+	margin-bottom: .6em;
 }
-main > nav > ul{
+
+body > section:first-of-type > ul{
 	display: flex;
 	justify-content: start;
-	margin: .5em 0 0 0;
+	margin: 0 0 2em 0;
 	list-style: none;
+	padding: 0;
 }
 
-main > nav > ul li{
+body > section:first-of-type > ul:first-of-type li{
+	margin-right: 1em;
+}
+
+body > section:first-of-type > ul a{
+	display: flex;
 	align-items: center;
-	border-radius: 1em;
+	font-size: .25em;
+	margin: 0;
+	padding: 1em 1.2em 1em 1.4em;
+	border-radius: 3em;
 	background-color: var(--mini-knop-kleur);
 	box-shadow: var(--shadow);
 }
 
-main > nav > ul a{
-	display: flex;
-	align-items: center;
-	font-size: .25em;
-	text-decoration: none;
-	margin: 0;
-	padding: 1em 1.2em 1em 1.4em;
-}
-
-main > nav > ul:nth-of-type(1) li img{
+body > section:first-of-type > ul:nth-of-type(1) li img{
 	width: 1.5em;
 	height: auto;
 	margin-left: 1em;
@@ -280,47 +249,91 @@ main > nav > ul:nth-of-type(1) li img{
 	transform: rotate(45deg);
 }
 
-nav h2:nth-of-type(2){
-	font-size: .7em;
-	width: fit-content;
-	margin: 2em 0 .5em 0;
-}
-
-nav ul:nth-of-type(2){
+body > section:first-of-type ul:nth-of-type(2){
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	width: 100%;
 	grid-template-rows: auto;	
 	grid-auto-flow: dense;
-	grid-gap: 0.8em;
+	grid-gap: 0.9em;
 	margin: 0;
 }
 
-nav ul:nth-of-type(2) li{
-	display: flex;
-	border-radius: .5em;
-	width: 100%;
-}
-
-nav ul:nth-of-type(2) li a{
+body > section:first-of-type ul:nth-of-type(2) li a{
 	padding: 0 .8em 0 0;
 	width: 100%;
 	font-size: 20%;
 }
 
-nav ul:nth-of-type(2) li img{
-	width: 25%;
-	margin: 0 1em 0 0;
+body > section:first-of-type ul:nth-of-type(2) li img{
+	width: 35%;
+	margin: 0 9% 0 0;
 	border-top-left-radius: 2em;
 	border-bottom-left-radius: 2em;
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
 }
 
+
+/* Responsiveness uitschuifbalk */
+@media (min-width: 600px){
+	body > section:first-of-type ul:first-of-type li{
+		font-size: 2em;
+	}
+
+	body > section:first-of-type ul:nth-of-type(2) li{
+		font-size: 3em;
+	}
+}
+
+@media (min-width: 800px){
+	body > section:first-of-type ul:first-of-type li{
+		font-size: 3em;
+	}
+
+	body > section:first-of-type ul:nth-of-type(2) li{
+		font-size: 4em;
+	}
+}
+
+@media (min-width: 1000px){
+	body > section:first-of-type ul:first-of-type li{
+		font-size: 4em;
+	}
+
+	body > section:first-of-type ul:nth-of-type(2) li{
+		font-size: 5em;
+	}
+}
+
+
+/* Laatste 4 elementen in de nav*/
+header nav:nth-of-type(2){
+	display: flex;
+	align-items: center;
+}
+
+nav:nth-of-type(2) img{
+	width: 1.5em;
+	margin: 0 0 0 1em;
+}
+
+nav:nth-of-type(2) a:last-of-type img{
+	width: 1em;
+	margin-left: .4em;
+}
+
+img[alt="Cartoon guy with a yellow hoodie"]{
+	border-radius: 5em;
+	border: 1.4px solid var(--color-text);
+}
+
+
+/* Page titel en scroll content */
 h1{
 	display: flex;
 	justify-content: center;
-	margin-top: 2.5em;
+	margin-top: 3em;
 	margin-bottom: 0;
 	font-size: 3em;
 	color: var(--color-text-licht);
@@ -352,7 +365,6 @@ h1{
 	}
 }
 
-
 main ul{
 	column-count: 2;
 	column-gap: 1.5em;
@@ -362,11 +374,8 @@ main ul{
 	font-weight: 600;
 }
 
-img,a{
+ img,a{
 	width: 100%;
-	height: auto;
-	display: block;
-	padding: 0;
 }
 
 li div img{
@@ -383,19 +392,19 @@ li div{
 	margin: var(--margin-content);
 }
 
-li h3{
+li span{
 	margin-top: .4em;
 	margin-left: .2em;
 	color: var(--color-text);
 	font-weight: var(--bold-tekst);
 	font-size: 1.2em;
 }
+
 li p{
 	margin: .2em 0 2em .2em;
 	font-size: .9em;
 	color: var(--sponsor-grijs);
 }
-
 
 li > a > img{
 	box-shadow: var(--shadow);
@@ -408,17 +417,16 @@ li {
  }
 
  li button{
-	border: 2px solid var(--merk-kleur);
+	border: 2px solid var(--color-text-licht);
 	position: absolute;
 	transform: translate(-50%, -50%);
-	padding: 15px 15px;
+	padding: .8em 1em .8em 1em;
 	background-color: var(--merk-kleur);
 	color: var(--color-background);
 	border-radius: 2em;
 	cursor: pointer;
 	opacity: 0;
 	font-weight: var(--bold-tekst);
-	width: fit-content;
  }
 
  li a:nth-of-type(2){
@@ -428,11 +436,11 @@ li {
 	color :var(--color-background);
 	font-weight: var(--bold-tekst);
 	opacity: 0;
-	background-color: rgba(75, 75, 75, 0.34);
+	background-color: rgba(81, 81, 81, 0.559);
 	width: 6.1em;
-	padding: .8em .8em;
+	padding: .8em 1em .8em 1em;
 	border-radius: 2em;
-	text-decoration: none;
+	border: 2px solid var(--color-text-licht);
  }
 
  li a:nth-of-type(2) img {
@@ -441,7 +449,8 @@ li {
 	box-shadow: none;
  }
 
- /*positioneer de knoppen verschillende positie per afbeelding */
+
+ /* Hover over de scroll content */
 li:nth-of-type(1) button{
 	top: 12%;
 	left: 75%;
@@ -518,12 +527,11 @@ ul a{
 }
 
 
-
+/* Responsiveness van de scroll content */
 @media (min-width: 750px){
 	main ul{
 		column-count: 3;
-		margin-left: 2.5em;
-		margin-right: 2.5em;
+		margin: 4% 4% 6% 4%;
 		column-gap: 2.2em;
 	} 
 }
@@ -531,29 +539,21 @@ ul a{
 @media (min-width: 1000px){
 	main ul{
 		column-count: 4;
-		margin-left: 7%;
-		margin-right: 7%;
+		margin: 4% 7% 8% 7%;
 	} 
 }
 
 @media (min-width: 1200px){
 	main ul{
 		column-count: 5;
-		margin-left: 7%;
-		margin-right: 7%;
 	} 
 }
 
 
-
-
-
-/* test------------------------ */
-
-
+/* Footer knop*/
 footer a{
 	width: 4em;
-	height: auto;
+	height: 4em;
 	background-color: white;
 	padding: 1em;
 	border-radius: 4em;
@@ -564,36 +564,27 @@ footer a{
     z-index: 1000;
 }
 
-.page2 > section:first-of-type{
+
+/****************/
+/* Profile page */
+/****************/
+
+
+/* Profiel informatie */
+.page2 > section:nth-of-type(2){
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
 }
 
 .page2 h1{
-	display: flex;
-	justify-content: center;
-	margin-top: 4em;
+	margin-top: 5em;
+	margin-bottom: 1em;
 	font-size: 1.8em;
-	/*
-	text-transform: uppercase;
-	color: var(--merk-kleur);
-	text-shadow: .15em .15em 0 var(--dark-background);
-	rotate: -3deg;
-	*/
-	color: var(--color-text-licht);
-	text-shadow:  0 0 0.1em var(--merk-kleur),
-    0 0 0.2em var(--merk-kleur),
-    0 0 0.3em var(--merk-kleur),
-	0 0 0.4em var(--merk-kleur),
-	0 0 0.5em var(--merk-kleur);
-	text-transform: uppercase;
 }
 
-img[alt="Profiel foto in het groot"]{
+img[alt="User profile"]{
 	width: 20%;
-	height: auto;
 	display: flex;
 	justify-content: center;
 	margin-top: 1em;
@@ -602,7 +593,7 @@ img[alt="Profiel foto in het groot"]{
 }
 
 @media(max-width: 600px){
-	img[alt="Profiel foto in het groot"]{
+	img[alt="User profile"]{
 		width: 45%;
 	}
 }	
@@ -614,12 +605,8 @@ h2{
 h3{
 	font-weight: lighter;
 	font-size: .99em;
-	color: rgb(100, 99, 99);
+	color: var(--sponsor-grijs);
 	margin: 0;
-}
-
-img[alt="pinterest logo in het grijs"]{
-	width: 1.5em;
 }
 
 .page2 section > div{
@@ -628,32 +615,47 @@ img[alt="pinterest logo in het grijs"]{
 	margin-bottom: .5em;
 }
 
-h4{
+img[alt="pinterest logo in gray"]{
+	width: 1.5em;
+}
+
+p{
 	margin: 0 0 .8em 0;
 }
 
-.page2 section button{
-	padding: 1em;
-	border-radius: 1.5em;
-	border: 2px solid var(--dark-background);
+/* Share en edit knoppen */
+.page2 button{
+	padding: .8em 1em .8em 1em;
+	background-color: var(--sponsor-grijs);
+	color: var(--color-background);
+	border-radius: 2em;
+	cursor: pointer;
+	font-weight: var(--bold-tekst);
+	border: 2px solid var(--color-text);
 	box-shadow: var(--shadow);
-	margin: .4em;
-	font-weight: 600;
-	justify-content: center;
-	background-color: var(--color-background);
-	color: var(--color-text)
-
 }
 
-.page2 section a{
+.page2 button.geklikt{
+	background-color: var(--merk-kleur);
+	font-weight: var(--bold-tekst);
+}
+
+
+/* Organize knop */
+.page2 div button{
+	background-color: var(--merk-kleur);
+}
+
+/* Create en save tabs */
+.page2 > section:nth-of-type(2) a{
 	margin: 1em .8em 1em .8em;
+	cursor: pointer;
 }
 
-.page2 section a.geselecteerd{
+.page2 section:nth-of-type(2) a.geselecteerd{
 	font-weight: var(--bold-tekst);
 	border-bottom: 3px solid var(--color-text); 
 }
-
 
 .page2 section section:nth-of-type(2){
 	display: flex;
@@ -661,25 +663,27 @@ h4{
 }
 
 
-.page2 section div:nth-of-type(2){
+/* filter plus knop */
+img[alt="Filter"] , img[alt="Plus"]{
+	width: 1.7em;
+	height: auto;
+	margin: 2em 2em 0 2em;
+}
+
+.page2 section:nth-of-type(2) div:nth-of-type(2){
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
 }
 
 
-.page2 section div:nth-of-type(2).onzichtbaar{
+/* Verstop filter en plus als je op tab klikt*/
+.page2 section:nth-of-type(2) div:nth-of-type(2).onzichtbaar{
 	display: none;
 }
 
-img[alt="filter icoon"] , img[alt="plus icoon"]{
-	width: 1.7em;
-	height: auto;
-	margin: 2em 2em 0 2em;
-}
 
-
-
+/* Saved content */
 .page2 main{
 	display: grid;
 	grid-template-columns: 1;
@@ -691,54 +695,56 @@ img[alt="filter icoon"] , img[alt="plus icoon"]{
 	display: none;
 }
 
-/*
-.page2 main{
-	display: none;
-	border: 2px solid orange;
+
+/* Board suggestions */
+.page2 main > section a{
+	text-decoration: none;
+	color: var(--color-text);
 }
 
-*/
-
-.page2 main section:nth-of-type(3) img{
+.page2 main section img{
 	border-radius: 10%;
+	box-shadow: var(--shadow);
+	border: 1px solid var(--sponsor-grijs);
 }
 
-
-
-/* Saved content */
-
-h5{
+.page2 main > section h3{
 	margin: 0;
 	font-size: 1.2em;
+	font-weight: var(--bold-tekst);
+	color: var(--color-text);
 }
 
-h6{
+.page2 main > section h4{
 	margin: 0;
 	font-size: .8em;
 }
 
-h7{
+.page2 main > section p{
+	font-weight: lighter;
 	margin: 0;
 	font-size: .8em;
 }
 
-h8{
-	margin: 0;
+.page2 main > h2{
 	font-size: 1.2em;
 	font-weight: var(--bold-tekst);
 }
 
-span{
-	background-color: #aeaeae;
+/* divider streepjes */
+.page2 main > span{
+	background-color: var(--sponsor-grijs);
 	padding-top: 2px;
 }
 
+/* Organized idee even zetten met knop */
 .page2 main > div{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
 
+/* Scroll content */
 .page2 ul{
 	margin: 0;
 }
@@ -751,7 +757,8 @@ span{
 	}
 }
 
-.page2 main h8, .page2 span, .page2 ul, .page2 main > div{
+/* houd belangrijke koppen, deviders en scroll content even groot als de page */
+.page2 main h2, .page2 span, .page2 ul, .page2 main > div{
 	grid-column: 1/ -1;
 }
 
@@ -779,28 +786,18 @@ span{
 	}
 }
 
-.page2 button.geklikt{
-	background-color: var(--dark-background);
-	color: var(--color-text-licht);
-	font-weight: bolder;
-}
 
-
+/* Knop in created tab */
 .page2 section:has(h6):has(button) button:last-of-type{
 	color: var(--color-text-licht);
 	background-color: var(--merk-kleur);
-	border: none;
 	border-radius: 2em;
 	cursor: pointer;
 	padding: 15px 15px;
 	font-weight: var(--bold-tekst);
 	box-shadow: var(--shadow);
+	margin-top: 1em;
 } 
-
-
-
-
-
 
 .page2 section:has(h6):has(button){
 	display: flex;
@@ -817,10 +814,8 @@ span{
 	display: none;
 }
 
-/*
 
-
-
+/* darkmode */
 @media(prefers-color-scheme: dark){
 	:root{
 		--color-text:#ffffff;
@@ -834,58 +829,95 @@ span{
 		--input-text-color: rgb(0, 0, 0);
 		--shadow: 0 0.2px 6px #c9c7c7be;
 		--mini-knop-kleur: #424040;
+		--sponsor-grijs: rgb(211, 211, 211);
 	}
 
 	form img{
 		content: url("/images/search-darkmode-icoon.png");
 	}
 
-	nav:nth-of-type(2) > img:nth-of-type(1){
+	img[alt="Notifications"]{
 		content: url("/images/notification-darkmode-icoon.png");
 	}
-	nav:nth-of-type(2) > img:nth-of-type(2){
+	img[alt="Messages"]{
 		content: url("/images/message-darkmode-icoon.png");
 	}
-	nav:nth-of-type(2) a img{
-		content: url("/images/dropwdown-darkmode-icoon.png");
+	img[alt="Dropdown arrow"]{
+		content: url("/images/dropdown-darkmode-icoon.png");
 	}
-	main > nav  ul:nth-of-type(1) img{
+	img[alt="Filter"]{
+		content: url("/images/filter-darkmode-icoon.png");
+	}
+	img[alt="Plus"]{
 		content: url("/images/plus-darkmode-icoon.png");
 	}
-	}
+	
+
 }
 
 
-rood tekst shadow effect:
-	padding: 1em;
-	border-radius: 1.5em;
-	border: .15em solid var(--merk-kleur);
-	box-shadow: 0 0 0.1em var(--merk-kleur),
-	0 0 0.5em var(--merk-kleur);
-	margin: .4em;
-	font-weight: 600;
-	justify-content: center;
-	background-color: var(--merk-kleur);
-	color: var(--color-text-licht);
-	font-weight: bolder;
 
-
-
-
-/*.containerProfielContent{
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(6, 6em);	
-	grid-auto-flow: dense;
-	grid-gap: 0.8em;
-	margin: 2em;
-} */
-
-a:focus , button:focus , input:focus, img:focus{
-	box-shadow: var(--shadow);
-}
-
-li > a > img:hover{
+/* afbeeldingen groter maken als je er over heen hovert */
+li > a:first-child > img:hover{
 	width: 103%;
 }
 
+/* focus styles */
+img:focus, a:focus, input:focus, button:focus, .page2 section img:focus{	
+	outline: 3px solid rgba(0, 21, 255, 0.617);
+}
+
+
+/* skip link */
+a[href='#main']{
+	background-color: var(--merk-kleur);
+	color: rgb(255, 255, 255);
+	font-weight: var(--bold-tekst);
+	font-size: 1.2em;
+	position: absolute;
+	text-align: center;	
+	padding: 1em .7em;
+	width: 45%;
+	opacity: 0;
+	border-radius: 2em;
+	text-decoration: none;
+
+}
+
+a[href='#main']:focus{
+	left: 5%;
+	opacity: 1;
+}
+
+.page2 a[href="#main"]:focus{
+	margin-top: 7em;
+}
+
+
+/* verschijn ranimatie */
+
+@media (prefers-reduced-motion: no-preference){
+
+	/* geen tijd meer voo */
+}
+
+
+/**************/
+/* Bronnen */
+/**************/
+/*
+1. Has selectors:
+  https://developer.mozilla.org/en-US/docs/Web/CSS/:has
+  2. Hover focus states:
+  https://zellwk.com/blog/style-hover-focus-active-states/
+  3. Darkmode redesign:
+  https://stuffandnonsense.co.uk/blog/redesigning-your-product-and-website-for-dark-mode
+  4. Multi column:
+  https://www.w3schools.com/css/css3_multiple_columns.asp
+  5. Break inside avoid: 
+  https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_multicol_layout/Handling_content_breaks_in_multicol_layout
+  6. Afbeeldingen en gifs:
+ https://nl.pinterest.com/
+ 7. Bezier animatie:
+ https://tools.webdevpuneet.com/css-easing-generator/
+*/

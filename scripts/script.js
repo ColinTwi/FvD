@@ -2,33 +2,28 @@
 console.log("test");
 
 /* zoek shuifbalk */
-
-var form = document.querySelector('form');
-var schuifbalk = document.querySelector("main > nav");
+var zoekInput = document.querySelector('form input');
+var schuifbalk = document.querySelector("body > section:first-of-type");
 var balkOpen = false;
-var body = document.querySelector("body");
-form.onclick = uitSchuiven;
+zoekInput.onfocus = uitSchuiven;
+zoekInput.onblur = uitSchuiven;
 
 function uitSchuiven() {
     if(balkOpen){
-        schuifbalk.classList.remove("klap")
-        schuifbalk.classList.add("terug");
-        console.log("schuiven");
+        schuifbalk.classList.toggle("uitklappen")
+        schuifbalk.classList.toggle("inklappen");
+        console.log("uitklappen");
 }else{
-    schuifbalk.classList.add("klap");
-    schuifbalk.classList.remove("terug")
-    console.log("schuiven terug");    
+    schuifbalk.classList.add("uitklappen");
+    schuifbalk.classList.remove("inklappen")
+    console.log("inklappen");    
 } balkOpen = !balkOpen;
 };
 
 
-
-
-
-
+/* share edit knoppen */
 var shareKnop = document.querySelector(".page2 button:nth-of-type(1)");
 var editKnop = document.querySelector(".page2 button:nth-of-type(2)");
-
 
 shareKnop.onclick = veranderKnop1; 
 editKnop.onclick = veranderKnop2;
@@ -42,36 +37,9 @@ function veranderKnop2() {
 }
 
 
-/*
-var createdTabs = document.querySelector(".page2 section a:nth-of-type(1)");
-var savedTabs = document.querySelector(".page2 section a:nth-of-type(2)");
-
-createdTabs.onclick = selectCreated;
-savedTabs.onclick = selectSaved;
-
-savedTabs = savedTabs.classList.add("active")
-
-function selectCreated(){
-    savedTabs.classList.remove("geselecteerd");
-    createdTabs.classList.add("geselecteerd");
-    console.log("createKnop");
-}
-
-function selectSaved(){
-    savedTabs.classList.add("geselecteerd");
-    createdTabs.classList.remove("geselecteerd");
-    console.log("saveKnop");
-}
-*/
-
-
-
 /* saved en created tabs */
-
-var createdTabs = document.querySelector(".page2 section a:nth-of-type(1)");
-var savedTabs = document.querySelector(".page2 section a:nth-of-type(2)");
-
-
+var createdTabs = document.querySelector(".page2 section:nth-of-type(2) a:nth-of-type(1)");
+var savedTabs = document.querySelector(".page2 section:nth-of-type(2) a:nth-of-type(2)");
 
 createdTabs.onclick = verander2;
 savedTabs.onclick = verander;
