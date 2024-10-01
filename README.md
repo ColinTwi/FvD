@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 Rood 
 
   #### Je focus:
-  Surface plane
+  Responsiveness
  
 </details>
 
@@ -59,6 +59,20 @@ Rood
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
+------------foto van blaadje test ------
+<img src="readme-images/wcag1.jpg" width="375px" alt="">
+<img src="readme-images/wcag2.jpg" width="375px" alt="">
+<img src="readme-images/wcag3.jpg" width="375px" alt="">
+<img src="readme-images/wcag4.jpg" width="375px" alt="">
+<img src="readme-images/wcag5.jpg" width="375px" alt="">
+
+Mijn bevindingen:
+- Pinterest gebruikt overmatig veel divs.
+- Pinterest maakt ook geen gebruik van headings.
+- Er worden ook geen lists gebruikt.
+- Niet elke afbeelding heeft goede alt.
+- De contrast van de navigatie iconen zijn niet heel goed te zien, want ze zijn licht grijs op een witte achtergrond.
+
 </details>
 
 
@@ -69,13 +83,10 @@ Rood
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
-
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/home.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/zoeken.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -91,6 +102,8 @@ Rood
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  Begin van de opzet en navigatie gaat tot nu toe goed. Ik vind het alleen lastig hoe ik de main content ga coderen.
+<img src="readme-images/week1-nav.png" width="375px" alt="">
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -105,10 +118,9 @@ Rood
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Navigatie mag bestaan uit meerdere navs en die dan het liefst in de header plaatsen.
+  - Zorg dat je nu al bezig bent met toegankelijkheid
+  - De scroll content kan je beter met flex of column count maken inplaats van grid.
 
 </details>
 
@@ -124,6 +136,12 @@ Rood
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  Week 2
+  Ging goed, aan het begin probeerde ik nog wel grid te gebruiken op mijn ul voor de scroll content maar dat kreeg ik niet voor elkaar. 
+
+  <img src="readme-images/moeite-code-css-week2.jpg" width="375px" alt="">
+  <img src="moeite-met-ruimte-content-plaatsing.png" width="375px" alt="">
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -138,10 +156,9 @@ Rood
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Ik mag geen classes of ID's gebruiken
+  - Darkmode kan ik verbeteren door de afbeeldingen naar een witte versie te laten veranderen met prefers color scheme
+  - Ik mag de body van de 2e html pagina een class naam geven zodat het niet te moeilijk wordt met selectors.
 
 </details>
 
@@ -156,6 +173,10 @@ Rood
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+
+  - Ik moet nog een skip link hebben.
+  - Afbeeldingen mogen wel iets groter.
+  - Focus stijl moet beter zichtbaar worden.
 
 </details>
 
@@ -215,10 +236,11 @@ Rood
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Bronnenlijst moet nog.
+  - Code beter bij elkaar geordend.
+  - Animatie preference maken.
+  - Heading moet ik laten kloppen
+  - Uitschuifbalk staat in nav mr gelieve in een section hebben
 
 </details>
 
@@ -232,19 +254,26 @@ Rood
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/uitkomst.png" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Ik heb geleerd hoe ik websites responsive maak.
+  <img src="readme-images/responsive.png" width="375px" alt="top">
 
+  Ik heb geleerd hoe ik een darkmode kan maken.
+  <img src="readme-images/darkmode.png" width="375px" alt="top">
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  Geen tijd meer over om de prefer animatie te maken
+  <img src="readme-images/preferanimatie.png" width="375px" alt="bummer">
+
+  Ik had moeite met de uitschuifbalk laten werken op telefoon formaat
+  <img src="readme-images/uitschuifbalk.png" width="375px" alt="bummer">
 </details>
 
 
@@ -260,8 +289,22 @@ Rood
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. Has selectors:
+  https://developer.mozilla.org/en-US/docs/Web/CSS/:has
+  2. Hover focus states:
+  https://zellwk.com/blog/style-hover-focus-active-states/
+  3. Darkmode redesign:
+  https://stuffandnonsense.co.uk/blog/redesigning-your-product-and-website-for-dark-mode
+  4. Multi column:
+  https://www.w3schools.com/css/css3_multiple_columns.asp
+  5. Break inside avoid: 
+  https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_multicol_layout/Handling_content_breaks_in_multicol_layout
+  6. Afbeeldingen en gifs:
+ https://nl.pinterest.com/
+ 7. Bezier animatie:
+ https://tools.webdevpuneet.com/css-easing-generator/
+
+
+
 
 </details>
