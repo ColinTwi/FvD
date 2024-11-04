@@ -246,7 +246,6 @@ body > section:first-of-type > ul:nth-of-type(1) li img{
 	margin-left: 1em;
 	border-radius: 0;
 	box-shadow: none;
-	transform: rotate(45deg);
 }
 
 body > section:first-of-type ul:nth-of-type(2){
@@ -288,7 +287,7 @@ body > section:first-of-type ul:nth-of-type(2) li img{
 
 @media (min-width: 800px){
 	body > section:first-of-type ul:first-of-type li{
-		font-size: 3em;
+		font-size: 2.5em;
 	}
 
 	body > section:first-of-type ul:nth-of-type(2) li{
@@ -298,7 +297,7 @@ body > section:first-of-type ul:nth-of-type(2) li img{
 
 @media (min-width: 1000px){
 	body > section:first-of-type ul:first-of-type li{
-		font-size: 4em;
+		font-size: 3.5em;
 	}
 
 	body > section:first-of-type ul:nth-of-type(2) li{
@@ -823,11 +822,11 @@ img[alt="Filter"] , img[alt="Plus"]{
 		--color-background:#1d1d1d;
 		--margin-content: 1em 0 2em 0;
 		--bold-tekst: 600;
-		--input-background: rgb(132, 132, 132);
+		--input-background: rgb(32, 32, 32);
 		--dark-background: rgb(255, 255, 255);
 		--merk-kleur: red;
 		--input-text-color: rgb(0, 0, 0);
-		--shadow: 0 0.2px 6px #c9c7c7be;
+		--shadow: 0 0.2px 6px #c9c7c770;
 		--mini-knop-kleur: #424040;
 		--sponsor-grijs: rgb(211, 211, 211);
 	}
@@ -851,8 +850,9 @@ img[alt="Filter"] , img[alt="Plus"]{
 	img[alt="Plus"]{
 		content: url("/images/plus-darkmode-icoon.png");
 	}
-	
-
+	img[alt="Cross"]{
+		content: url("/images/kruis-darkmode-icoon.png");
+	}
 }
 
 
@@ -864,7 +864,7 @@ li > a:first-child > img:hover{
 
 /* focus styles */
 img:focus, a:focus, input:focus, button:focus, .page2 section img:focus{	
-	outline: 3px solid rgba(0, 21, 255, 0.617);
+	outline: 3px solid rgb(44, 166, 14);
 }
 
 
@@ -881,7 +881,6 @@ a[href='#main']{
 	opacity: 0;
 	border-radius: 2em;
 	text-decoration: none;
-
 }
 
 a[href='#main']:focus{
