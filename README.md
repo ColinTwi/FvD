@@ -99,7 +99,7 @@ Samengevat heeft pinterest de volgende problemen:
   <img src="readme-images/Breakdown-schets1.png" width="375px" alt="breakdown van de hele pagina">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  Dit is mijn breakdown schets van de zoekbalk op de website:
+  Dit is mijn breakdown schets van de profiel page op de website:
   <img src="readme-images/breakdown-schets2.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
@@ -126,11 +126,11 @@ Samengevat heeft pinterest de volgende problemen:
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1 Colin     | student 2          | student 3    | student 4        |
-  | Hoe maak ik         | ---                | ---          | ---              |
-  | de lay-out          | en dit             | en ik dit    | en dan ik dat    |
-  | van de              | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | scroll content      | ...                | ...          | ...              |
+  | student 1      | student 2          | student 3    | student 4        |
+  | ---            | ---                | ---          | ---              |
+  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
+  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | ...            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
@@ -169,11 +169,11 @@ Samengevat heeft pinterest de volgende problemen:
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1  Colin    | student 2          | student 3    | student 4        |
-  | Colin               | ---                | ---          | ---              |
-  | dit bespreken       | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog      | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...                 | ...                | ...          | ...              |
+  | student 1      | student 2          | student 3    | student 4        |
+  | ---            | ---                | ---          | ---              |
+  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
+  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | ...            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
@@ -205,17 +205,17 @@ Samengevat heeft pinterest de volgende problemen:
 
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
-  # Negatieve bevindingen
+  ### Negatieve bevindingen
   Uit de 2e toengankelijkheidstest bleek dat ik geen visible focus style heb voor de interactieve en navigeerbare elementen. Daarnaast zijn de knoppen in de navigatie een beetje klein en daarom ook moeilijk te activeren. Verder mis ik nog een skiplink voor de visueel beperkte gebruikers. Voor een paar van de afbeeldingen kloppen de alt attributen niet helemaal, sommige staan in het nederlands geschreven en de andere in het engels. Dit zorgt ervoor dat de voice over sommige alt attributen verkeerd uitspreekt. 
 
   Voor de scroll content is er media (Gifs) die automatisch afspelen maar sinds je gifs niet kan pauzeren zou ik niet weten hoe ik dit moet oplossen. Verder volgen de animaties de prefers-reduced motion media query nog niet.
 
   Een andere bevinding is dat de uitschuif zoekbalk niet uitklapbaar/selecteerbaar is via de toetsenbord knoppen.
 
-  # Verbeterde bevindingen
+  ### Verbeterde bevindingen
   De pagina's zijn nu gevalideerd en hebben elk een unieke titel en elk één h1. De interactieve elementen naast de zoekbalk zijn nu wel navigeerbaar met het toetsenbord. Daarnaast hebben ze nu ook meer ruimte tussen elkaar voor een betere scroll gebied. Verder wordt list content nu wel in list elementen geplaatst. Voor de knoppen heb ik nu button elementen gebruikt inplaats van divs met de opmaak van een button. Darkmode en light mode worden onderstuind en de kleur contrast van de knoppen en tekst zijn verbeterd.
 
-  # Belangrijkste samengevat
+  ### Belangrijkste samengevat
   - Maak een goede zichtbare focus style.
   - Vergroot de navigatie knop iconen.
   - Maak een skiplink.
@@ -226,7 +226,6 @@ Samengevat heeft pinterest de volgende problemen:
 
 
 
-HEADING LEVELS DIE NIET KLOPPEN!!!!!! hier bijschrijven voor voortgang
 
 ## Voortgang 3 (week 4)
 
@@ -236,15 +235,13 @@ HEADING LEVELS DIE NIET KLOPPEN!!!!!! hier bijschrijven voor voortgang
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-  Ging goed:
-
+  ### Ging goed:
   De eerste animatie die ik had gemaakt ging goed en daarom heb ik een tweede animatie gemaakt. In deze tweede animatie heb ik de custom bezier website gebruikt om de animatie een soort bounce effect te geven.
   <img src="readme-images/code-animatie1.png">
   <img src="readme-images/animatie2.png">
 
-  Ging slecht:
-
-  Ik kwam er steeds niet achter waarom ik niet met de keyboard door de website content kon tabben, maar uiteindelijk kwam ik er achter dat ik niet alle afbeeldingen een link had toegegeven en daarom ook niet interactief waren.
+  #### Ging slecht:
+  Ik kwam er maar niet achter waarom ik niet met de keyboard door de website content kon tabben, maar uiteindelijk kwam ik er achter dat ik niet alle afbeeldingen een link had toegegeven en daarom ook niet interactief waren.
   <img src="readme-images/moeite-met-keyboard-nav.png">
 
   Ook had ik moeite met een hele specifieke section te selecteren zonder een andere section ook toe te voegen. Uiteindelijk heb ik een has selector gebruikt die gelukkig wel werkt.
@@ -254,7 +251,7 @@ HEADING LEVELS DIE NIET KLOPPEN!!!!!! hier bijschrijven voor voortgang
 
 
 
-  Vragen die ik heb
+  ### Vragen die ik heb voor voortgangsgesprek
 
   -Ik heb elk label en text op mijn website in het engels staan net zoals de echte website. Alleen heb ik de alt attributen in het nederlands staan. Moet ik dan een lang="nl" of lang="en"
 
@@ -282,7 +279,7 @@ HEADING LEVELS DIE NIET KLOPPEN!!!!!! hier bijschrijven voor voortgang
 
   De volgorde van mijn headings kloppen nog niet. Zo gebruik ik bijvoorbeeld h7 en h8 terwijl de headings elementen maar tot h6 mogen lopen. Verder staat mijn code een beetje door elkaar waardoor het lastig is om code terug te vinden. Daarom moet ik de code die bij elkaar hoort onder elkaar zetten met een comment die laat zien waar de code begint/stopt en wat de code doet. Ook moet ik nog een bronnenlijst gaan toevoegen. De uisschuifbalk/zoekbalk staat nu in een nav element maar het zou semantisch netter zijn als het in een section element staat.
 
-  Belangrijkste samengevat: 
+  ### Belangrijkste samengevat: 
   - Bronnenlijst moet nog.
   - Code beter bij elkaar geordend.
   - Heading moet ik laten kloppen
@@ -306,48 +303,62 @@ HEADING LEVELS DIE NIET KLOPPEN!!!!!! hier bijschrijven voor voortgang
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
-  Ik heb geleerd hoe ik websites responsive maak. 
+  Ik heb geleerd hoe ik websites responsive maak doormiddel van gebruik te maken van verschillende media-querys. 
   <img src="readme-images/responsive.png" width="375px" alt="top">
 
-  Ik heb geleerd hoe ik een darkmode kan maken.
+  Ik heb geleerd hoe ik een darkmode kan maken door kleuren in de root te zetten en de media prefers color scheme dark te gebruiken. Daarnaast heb ik geleerd hoe ik de url van een afbeelding kan veranderen zodat het in een andere variant voor de darkmode veranderd.
   <img src="readme-images/darkmode.png" width="375px" alt="top">
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 
-  Geen tijd meer over om de prefer animatie te maken
+  #### Niet gelukt
+  Ik kwam in tijdsnood dus lukte het mij niet om op te zoeken hoe ik prefer animatie kan maken en hoe ik het in mijn website kon toepassen.
   <img src="readme-images/preferanimatie.png" width="375px" alt="bummer">
 
-  Ik had moeite met de uitschuifbalk laten werken op telefoon formaat
+  #### Lastig
+  Ik had veel moeite met de uitschuifbalk/zoekbalk te laten werken op telefoon formaat. Zo was het moeilijk om de zoekopdrachten te laten passen op het kleine formaat maar nog wel leesbaar te maken.
   <img src="readme-images/uitschuifbalk.png" width="375px" alt="bummer">
 </details>
 
 ## Feedback uit het eindgesprek (week 5)
 <details open>
-  De kleine animaties die nu normale transities zijn mogen ook weer animatie werk zoals de keyframes die ik gebruik voor de website titel animatie.
-
-  De focus stijl in een andere kleur, want de kleur die ik nu gebruik lijkt erg op de standaard focus kleur.
+  
+  ### Feedback
+  Sommige elementen zoals de plaatjes in de scroll content hebben als animatie nu een transitie, maar het zou leuk zijn als ze geanimeerd worden zoals de h1 met keyframes.
+ 
+  De focus stijl moet eigenlijk in een andere kleur, want ik heb wel de kleur van de focus style veranderd maar dat is eigenlijk niet te zien sinds het zo op de orginele kleur lijkt.
 
   Als je op bepaalde afbeeldingen hovert worden ze iets groter gemaakt. Het zou ook leuk zijn als hetzelfde gebeurd op de andere afbeeldingen.
 
-  De kruisjes in de zoekbalk navigatie staan niet helemaal even.
+  Verder is de uitschuif zoekbalk niet heel netjes gemaakt. Zo staan de kruisjes in de zoekbalk niet helemaal even met de tekst.
   <img src="readme-images/kruisje-niet-net.png">
 
-  Maak ook nog een typfeld voor de zoekbalk op de kleine mobiele versie.
-
-  Werk het proces verslag (de README) af.
+  ### Het belangrijkste voor een voldoende
+  De website zelf voldoet aan een voldoende maar de README proces verslag is te minimaal. Zo ontbreekt de tweede toegankelijkheids test in het verslag en bestaat het verslag uit alleen maar bulletpoints.
+ 
 </details>
 
 ## Dit heb ik verbeterd (herkansing)
 <details open>
-Kruisen staan nu recht met de tekst:
-  <img src="readme-images/kruisen-nu-recht.png">
 
-De focusstijl is nu in een kleur die opvallender is:
-  <img src="readme-images/verbeterde-focus.png">
+### Veranderd:
 
+#### Kruisen:
+De kruisen heb ik wat groter gemaakt zodat de gebruikers met slecht zicht deze beter kunnen zien ook op klein scherm formaat. De kruisen staan nu recht met de tekst en staat in 1 volledige zin inplaats van dat de tekst lelijk gebroken staat in 2 lijnen tekst.
+<img src="readme-images/kruisen-nu-recht.png">
+
+#### Focus style:
+De focusstijl heb ik van de blauw die leek op de oorspronkelijke focus style naar de kleur groen veranderd. De groen valt goed op tegen de kleur van rood dat veel op de pinterest website wordt gebruikt en ook heb ik de lijn iets dikker gemaakt zodat het beter opvalt.
+<img src="readme-images/verbeterde-focus.png">
+
+#### Zoekbalk:
 Ik heb voor in de darkmode de achtergrond kleur van de zoekbalk donkerder gemaakt zodat je het icoontje en de tekst er in goed kan zien.
-  <img src="readme-images/inputbalk-donker.png">
+<img src="readme-images/inputbalk-donker.png">
+
+#### Proces verslag:
+Daarnaast heb ik mijn proces verslag verbeterd, zo heb ik nu het proces uitgeschreven inplaats van alleen maar bulletpoints te gebruiken. Daarnaast heb ik de tweede toegankelijkheids test die eerst ontbrak nu aangevuld.
+<img src="readme-images/verslag.png">
 </details>
 
 ## Bronnenlijst
