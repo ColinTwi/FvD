@@ -321,7 +321,7 @@ Samengevat heeft pinterest de volgende problemen:
   <img src="readme-images/uitschuifbalk.png" width="375px" alt="bummer">
 </details>
 
-## Feedback uit het eindgesprek (week 5)
+## Feedback/reflectie uit het eindgesprek (week 5)
 <details open>
   
   ### Feedback
@@ -359,6 +359,12 @@ Ik heb voor in de darkmode de achtergrond kleur van de zoekbalk donkerder gemaak
 #### Proces verslag:
 Daarnaast heb ik mijn proces verslag verbeterd, zo heb ik nu het proces uitgeschreven inplaats van alleen maar bulletpoints te gebruiken. Daarnaast heb ik de tweede toegankelijkheids test die eerst ontbrak nu aangevuld.
 <img src="readme-images/verslag.png">
+
+### Reflectie
+Ik heb in dit vak geleerd dat het belangrijk is om vroeg te beginnen met de toegankelijkheid. Door vroeg te beginnen kan je toegankelijkheid mooi intergreren in je website en hoef je niet hele grote stukken van je website later in eens te veranderen. Ook heb ik geleerd dat het schrijven van het proces verslag net zo belangrijk is als het coderen zelf. Met het proces verslag kan je bijvoorbeeld netjes bijhouden wat je hebt gedaan en nog moet doen. Verder heb ik geleerd dat kleine details, zoals de uitlijning van een kruis naast een kopje en een hover animatie van een afbeelding een uiteindelijke grote impact kunnen hebben op de gehele feel en opmaak van de website.
+
+Daarnaast heb ik ook veel technische dingen geleerd. Zo weet ik hoe ik een nette lay-out kan maken door gebruik te maken van grid of column count. Ook weet ik nu hoe ik met gemak een darkmode voor een app of website kan maken en hoe ik deze responsive maak.
+
 </details>
 
 ## Bronnenlijst
