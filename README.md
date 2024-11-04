@@ -36,7 +36,7 @@ Rood
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  Voor deze opdracht heb ik Pinterst gekozen. Als student designer gebruik ik pinterest best vaak en daarom ben ik benieuwd wat ik aan de website kan gaan verbeteren.
+  Voor deze opdracht heb ik Pinterest gekozen. Als student designer gebruik ik pinterest best vaak en daarom ben ik benieuwd wat ik aan de website kan gaan verbeteren.
 
   Pinterest
   https://nl.pinterest.com/
@@ -44,16 +44,17 @@ Rood
   De pagina's die ik na wil gaan maken zijn de home pagina en de profiel pagina die beide een zoekbalk uit laten klappen. De home pagina heeft bijzondere elementen zoals hover links en gifs die ik wil gaan proberen na te maken. De profiel pagina heeft een nette lay-out die ik ook wil proberen na te maken.
 
   #### Screenshot(s) van de eerste pagina (small screen): 
- Home pagina 
+  Home pagina 
   <img src="readme-images/home.jpg" width="375px" alt="Home scherm met afbeeldingen en gifs">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  zoek pagina
-  <img src="readme-images/zoeken.jpg" width="375px" alt="Zoekbalk met recente zoekopdrachten">
-
   Profiel pagina
-  <img src="readme-images/profielpagina.png" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/profielpagina.png" width="375px" alt="Profiel/gebruiker informatie met opgeslagen pins">
  
+  #### Screenshot(s) Dynamisch deel(small screen):
+  Zoekbalk
+  <img src="readme-images/zoekbalk.png" width="375px" alt="Zoekbalk met recente zoekopdrachten">
+
 </details>
 
 
@@ -66,12 +67,12 @@ Rood
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
-------------foto van blaadje test ------
-<img src="readme-images/wcag1.jpg" width="375px" alt="">
-<img src="readme-images/wcag2.jpg" width="375px" alt="">
-<img src="readme-images/wcag3.jpg" width="375px" alt="">
-<img src="readme-images/wcag4.jpg" width="375px" alt="">
-<img src="readme-images/wcag5.jpg" width="375px" alt="">
+  ### Blaadje WCAG checklist
+  <img src="readme-images/wcag1.jpg" width="375px" alt="">
+  <img src="readme-images/wcag2.jpg" width="375px" alt="">
+  <img src="readme-images/wcag3.jpg" width="375px" alt="">
+  <img src="readme-images/wcag4.jpg" width="375px" alt="">
+  <img src="readme-images/wcag5.jpg" width="375px" alt="">
 
 Mijn bevindingen:
 
@@ -95,11 +96,11 @@ Samengevat heeft pinterest de volgende problemen:
 
   ### de hele pagina: 
   Dit is mijn breakdown schets van de home page:
-  <img src="readme-images/home.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/Breakdown-schets1.png" width="375px" alt="breakdown van de hele pagina">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
   Dit is mijn breakdown schets van de zoekbalk op de website:
-  <img src="readme-images/zoeken.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/breakdown-schets2.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -237,7 +238,7 @@ HEADING LEVELS DIE NIET KLOPPEN!!!!!! hier bijschrijven voor voortgang
 
   Ging goed:
 
-  De eerste animatie die ik had gemaakt ging goed en daarom heb ik een tweede animatie gemaakt. In deze tweede animatie heb ik de custum bezier website gebruikt om de animatie een soort bounce effect te geven.
+  De eerste animatie die ik had gemaakt ging goed en daarom heb ik een tweede animatie gemaakt. In deze tweede animatie heb ik de custom bezier website gebruikt om de animatie een soort bounce effect te geven.
   <img src="readme-images/code-animatie1.png">
   <img src="readme-images/animatie2.png">
 
@@ -322,7 +323,7 @@ HEADING LEVELS DIE NIET KLOPPEN!!!!!! hier bijschrijven voor voortgang
 </details>
 
 ## Feedback uit het eindgesprek (week 5)
-
+<details open>
   De kleine animaties die nu normale transities zijn mogen ook weer animatie werk zoals de keyframes die ik gebruik voor de website titel animatie.
 
   De focus stijl in een andere kleur, want de kleur die ik nu gebruik lijkt erg op de standaard focus kleur.
@@ -335,10 +336,10 @@ HEADING LEVELS DIE NIET KLOPPEN!!!!!! hier bijschrijven voor voortgang
   Maak ook nog een typfeld voor de zoekbalk op de kleine mobiele versie.
 
   Werk het proces verslag (de README) af.
-
+</details>
 
 ## Dit heb ik verbeterd (herkansing)
-
+<details open>
 Kruisen staan nu recht met de tekst:
   <img src="readme-images/kruisen-nu-recht.png">
 
@@ -347,7 +348,7 @@ De focusstijl is nu in een kleur die opvallender is:
 
 Ik heb voor in de darkmode de achtergrond kleur van de zoekbalk donkerder gemaakt zodat je het icoontje en de tekst er in goed kan zien.
   <img src="readme-images/inputbalk-donker.png">
-
+</details>
 
 ## Bronnenlijst
 
